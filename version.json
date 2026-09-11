@@ -2,14 +2,13 @@
   "schemaVersion": 1,
   "enabled": true,
   "published": true,
-  "versionName": "1.0.1",
-  "versionCode": 1001,
-  "apkUrl": "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.1/PhotoFlow.apk",
-  "sha256": "3d39df33300ab9ff4c51fd923c98b4c44ae6cc00115126dd435dd341c1e7b577",
+  "versionName": "1.0.2",
+  "versionCode": 1002,
+  "apkUrl": "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.2/PhotoFlow.apk",
+  "sha256": "aee4a191deed33ded7c44d86eed8178ffb56c392d605ea4bac028c86384b01cc",
   "forceUpdate": false,
   "releaseNotes": [
-    "相册轻理 V1.0.1",
-    "首个正式 OTA 基线版本。"
+    "PhotoFlow V1.0.2\\n\\nversionCode: 1002\\nSHA-256: aee4a191deed33ded7c44d86eed8178ffb56c392d605ea4bac028c86384b01cc\\n\\n正式签名版本，由 GitHub Actions 构建并校验。"
   ],
-  "apkSizeBytes": 24368868
+  "apkSizeBytes": 24385908
 }
