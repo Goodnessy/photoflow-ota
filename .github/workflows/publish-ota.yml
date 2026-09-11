@@ -1,0 +1,126 @@
+name: Publish PhotoFlow OTA Metadata
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout OTA repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android build tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          yes | sdkmanager --licenses >/dev/null || true
+          sdkmanager 'build-tools;36.0.0'
+
+      - name: Read latest release and download APK
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          gh api "repos/${GITHUB_REPOSITORY}/releases/latest" > release.json
+          TAG="$(jq -r '.tag_name' release.json)"
+          APK_URL="$(jq -r '[.assets[] | select(.name | endswith(".apk"))][0].browser_download_url // empty' release.json)"
+          APK_NAME="$(jq -r '[.assets[] | select(.name | endswith(".apk"))][0].name // empty' release.json)"
+          test -n "$TAG"
+          test -n "$APK_URL"
+          test -n "$APK_NAME"
+          gh release download "$TAG" --pattern '*.apk' --dir dist
+          APK_PATH="dist/$APK_NAME"
+          test -s "$APK_PATH"
+          echo "TAG=$TAG" >> "$GITHUB_ENV"
+          echo "APK_URL=$APK_URL" >> "$GITHUB_ENV"
+          echo "APK_PATH=$APK_PATH" >> "$GITHUB_ENV"
+
+      - name: Verify APK identity and version
+        shell: bash
+        run: |
+          set -euo pipefail
+          BT="${ANDROID_SDK_ROOT:-$ANDROID_HOME}/build-tools/36.0.0"
+          "$BT/aapt" dump badging "$APK_PATH" > /tmp/badging.txt
+          BADGING="$(head -n 1 /tmp/badging.txt)"
+          echo "$BADGING"
+          PACKAGE_ID="$(printf '%s\n' "$BADGING" | sed -n "s/^package: name='\([^']*\)'.*/\1/p")"
+          VERSION_CODE="$(printf '%s\n' "$BADGING" | sed -n "s/.*versionCode='\([^']*\)'.*/\1/p")"
+          VERSION_NAME="$(printf '%s\n' "$BADGING" | sed -n "s/.*versionName='\([^']*\)'.*/\1/p")"
+          EXPECTED_VERSION="${TAG#v}"
+          EXPECTED_VERSION="${EXPECTED_VERSION#V}"
+          test "$PACKAGE_ID" = 'com.wenhe.photoflow'
+          test "$VERSION_NAME" = "$EXPECTED_VERSION"
+          [[ "$VERSION_CODE" =~ ^[0-9]+$ ]]
+          SHA256="$(sha256sum "$APK_PATH" | awk '{print $1}')"
+          APK_SIZE_BYTES="$(stat -c '%s' "$APK_PATH")"
+          echo "VERSION_NAME=$VERSION_NAME" >> "$GITHUB_ENV"
+          echo "VERSION_CODE=$VERSION_CODE" >> "$GITHUB_ENV"
+          echo "SHA256=$SHA256" >> "$GITHUB_ENV"
+          echo "APK_SIZE_BYTES=$APK_SIZE_BYTES" >> "$GITHUB_ENV"
+
+      - name: Generate version.json
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+
+          release = json.loads(Path('release.json').read_text(encoding='utf-8'))
+          body = (release.get('body') or '').strip()
+          notes = []
+          for raw in body.splitlines():
+              line = raw.strip()
+              if not line or line.startswith('#'):
+                  continue
+              if line.startswith('- '):
+                  line = line[2:].strip()
+              if line:
+                  notes.append(line)
+          if not notes:
+              notes = [f"PhotoFlow V{os.environ['VERSION_NAME']} 更新"]
+
+          data = {
+              'schemaVersion': 1,
+              'enabled': True,
+              'published': True,
+              'versionName': os.environ['VERSION_NAME'],
+              'versionCode': int(os.environ['VERSION_CODE']),
+              'apkUrl': os.environ['APK_URL'],
+              'sha256': os.environ['SHA256'],
+              'forceUpdate': False,
+              'releaseNotes': notes[:8],
+              'apkSizeBytes': int(os.environ['APK_SIZE_BYTES']),
+          }
+          Path('version.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+          cat version.json
+
+      - name: Commit OTA metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add version.json
+          if git diff --cached --quiet; then
+            echo 'version.json already up to date'
+            exit 0
+          fi
+          git commit -m "publish OTA ${TAG}"
+          git push
