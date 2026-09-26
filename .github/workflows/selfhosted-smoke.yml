@@ -1,0 +1,21 @@
+name: PhotoFlow OTA Self-hosted Smoke
+
+on:
+  push:
+    paths:
+      - '.github/workflows/selfhosted-smoke.yml'
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: [self-hosted, Windows, X64]
+    timeout-minutes: 5
+    steps:
+      - name: Runner identity
+        shell: cmd
+        run: |
+          echo RUNNER_NAME=%RUNNER_NAME%
+          echo RUNNER_OS=%RUNNER_OS%
+          echo RUNNER_ARCH=%RUNNER_ARCH%
+          echo COMPUTERNAME=%COMPUTERNAME%
+          echo OTA SELF-HOSTED RUNNER OK
