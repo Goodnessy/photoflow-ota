@@ -1,14 +1,14 @@
 {
-  "schemaVersion": 1,
-  "enabled": true,
-  "published": true,
-  "versionName": "1.0.2",
-  "versionCode": 1002,
-  "apkUrl": "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.2/PhotoFlow.apk",
-  "sha256": "aee4a191deed33ded7c44d86eed8178ffb56c392d605ea4bac028c86384b01cc",
-  "forceUpdate": false,
-  "releaseNotes": [
-    "PhotoFlow V1.0.2\\n\\nversionCode: 1002\\nSHA-256: aee4a191deed33ded7c44d86eed8178ffb56c392d605ea4bac028c86384b01cc\\n\\n正式签名版本，由 GitHub Actions 构建并校验。"
-  ],
-  "apkSizeBytes": 24385908
+    "schemaVersion":  1,
+    "enabled":  true,
+    "published":  true,
+    "versionName":  "1.0.3",
+    "versionCode":  1003,
+    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.3/PhotoFlow.apk",
+    "sha256":  "0f17c37c6c6f1cc1b63413db6ea689576f9db470589e18cb4fa3a60a4b7bac68",
+    "forceUpdate":  false,
+    "releaseNotes":  [
+                         "鏂板鈥滃彧鏁寸悊鏈暣鐞嗙収鐗団€濊兘鍔涳紝骞跺寮烘暣鐞嗙姸鎬佺殑绋冲畾璇嗗埆锛屽噺灏戠郴缁熼噸鎵悗宸蹭繚鐣欑収鐗囧啀娆″嚭鐜般€?- 鏂板鈥滈€夌墖闆嗏€濓細鍙寜瀛╁瓙銆佹梾琛屻€佹椿鍔ㄧ瓑涓婚鏀堕泦鐓х墖锛屼笉绉诲姩銆佷笉澶嶅埗鍘熸枃浠躲€?- 鈥滄暣鐞嗙粺璁♀€濆崌绾т负鈥滅┖闂翠笌鏁寸悊鈥濓紝澧炲姞璁惧绌洪棿銆佺収鐗?瑙嗛鍗犵敤銆佹暣鐞嗙姸鎬併€佺収鐗囨潵婧愬拰閫夌墖闆嗙粺璁°€?- 鏁寸悊椤佃瑙夊崌绾э細椤堕儴娴眰銆佸緟鍒犺兌鍥娿€佸簳閮ㄤ俊鎭崱鏇磋交銆佹洿绮捐嚧锛屽悓鏃朵繚鎸佸師鏈夋粦鍔ㄦ墜鎰熴€?- 鍒犻櫎缁撴灉鏀逛负鏄庣‘鍖哄垎鈥滃凡浠庢湰鏈哄垹闄?/ 杩涘叆绯荤粺鍥炴敹绔?/ 浠嶅湪鏈満鐩稿唽鈥濄€?- 璁剧疆椤垫柊澧炩€滄鏌ユ洿鏂扳€濆叆鍙ｏ紝鍚屾椂淇濈暀鍚姩鏃惰嚜鍔ㄦ鏌?OTA銆?- 鏇存柊搴旂敤鍥炬爣锛屽苟灏嗘寮忔瀯寤恒€佺鍚嶃€丱TA 鍙戝竷鍏ㄩ儴杩佺Щ鍒版湰鏈?Windows Runner銆?"
+                     ],
+    "apkSizeBytes":  24468272
 }
