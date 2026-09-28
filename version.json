@@ -2,14 +2,13 @@
     "schemaVersion":  1,
     "enabled":  true,
     "published":  true,
-    "versionName":  "1.0.4.2",
-    "versionCode":  1007,
-    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.2/PhotoFlow.apk",
-    "sha256":  "199fa282158eccfb1c9adac84a6792ecd48b3218a2e9e970f643df8f8a7b12aa",
+    "versionName":  "1.0.4.2.1",
+    "versionCode":  1008,
+    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.2.1/PhotoFlow.apk",
+    "sha256":  "d22879c1f749e1151324128355986401134ec0f3af9f664ece70751a306f976a",
     "forceUpdate":  false,
     "releaseNotes":  [
-                         "修复 OTA 更新说明中文乱码，发布清单统一按 UTF-8 读取与生成。",
-                         "收紧全局圆角：卡片、按钮、照片、Dock、设置与 OTA 弹窗统一为更克制的轻微圆角。"
+                         "V1.0.4.2.1 / 1008 鍙慨銆岀浉鍐屻€嶅姛鑳藉煙锛屼笉鏀归椤点€佹暣鐞嗗拰閫夌墖銆?- 鏄庣‘鍥哄畾鐩稿唽椤甸『搴忥細鍏ㄩ儴鐓х墖 鈫?鎸夊湴鐐?鈫?鎴戠殑鐩稿唽 鈫?鍏ㄩ儴瑙嗛锛涙寜鍦扮偣缁х画淇濇寔妯悜婊戝姩銆?- 銆屾垜鐨勭浉鍐屻€嶉粯璁ゅ彧灞曠ず 6 涓浉鍐岋紝鏀寔鈥滃睍寮€鍙﹀ N 涓浉鍐?/ 鏀惰捣鈥濄€?- 鐩稿唽鍗＄墖鏀规垚涓ゅ垪 16:9 妯増灏侀潰锛屽帇缂╂枃瀛楀尯楂樺害锛屼竴灞忓彲鐪嬪埌鏇村鐩稿唽锛涗繚鐣欑収鐗囨暟銆佸崰鐢ㄧ┖闂村拰鏈暣鐞嗘暟閲忋€?- 瑙嗛鍒楄〃/鍗＄墖澧炲姞鐪熷疄鏈湴缂╃暐鍥撅細浼樺厛浣跨敤 MediaStore 缂╃暐鍥撅紝澶辫触鏃跺洖閫€鍒?MediaMetadataRetriever 鎶藉彇瑙嗛甯с€?- 瑙嗛鎵撳紑鍚庡厛鏄剧ず缂╃暐鍥撅紝绛夐甯х湡姝ｅ紑濮嬫覆鏌撳悗鍐嶅垏鎹㈠埌鎾斁鍣紱鎾斁鍣ㄤ細鑷姩鍚姩锛屽け璐ユ椂鍙洿鎺ラ噸璇曪紝閬垮厤鎸佺画榛戝睆銆?- 淇濇寔姝ｅ紡绛惧悕銆佺幇鏈?OTA 閾捐矾涓?Windows self-hosted Runner銆?"
                      ],
-    "apkSizeBytes":  47471890
+    "apkSizeBytes":  47586582
 }
