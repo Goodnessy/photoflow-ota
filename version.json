@@ -1,14 +1,19 @@
 {
-    "schemaVersion":  1,
-    "enabled":  true,
-    "published":  true,
-    "versionName":  "1.0.4.3",
-    "versionCode":  1009,
-    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.3/PhotoFlow.apk",
-    "sha256":  "664c952882d436aef3a692f3d32d6a34c4d4a34ec2f5ba4b1a68c6f2bc7725a3",
-    "forceUpdate":  false,
-    "releaseNotes":  [
-                         "V1.0.4.3 / 1009 缁х画绮句慨棣栭〉銆佺浉鍐屻€佹暣鐞嗐€侀€夌墖鐨勮瑙夎瑷€锛屽噺灏戝ぇ鍦嗚銆佸帤闃村奖鍜屽崱鐗囧鍗＄墖锛屼繚鐣欑幇鏈変俊鎭灦鏋勪笌浜や簰銆?- 搴曢儴 4 涓竴绾у鑸浘鏍囩粺涓€涓烘寮忕嚎鎬у浘鏍囦綋绯伙紝淇濈暀棣栭〉銆佺浉鍐屻€佹暣鐞嗐€侀€夌墖鍘熸湁瀵艰埅鍏崇郴銆?- 閫夌墖闆嗘柊澧炴壒閲忓鍑猴細榛樿鍙鍒讹紝涓嶇Щ鍔ㄣ€佷笉鍒犻櫎鍘熺収鐗囷紱鏀寔瀵煎嚭褰撳墠閫夌墖闆嗭紝浠ュ強涓€绾ч€夌墖闆?+ 浜岀骇绮鹃€夌殑鐪熷疄鏂囦欢澶圭粨鏋勩€?- 瀵煎嚭浣跨敤 Android Storage Access Framework 閫夋嫨鐩爣鐩綍锛屽師濮嬪瓧鑺傚鍒朵繚鐣欏浘鐗囪川閲忎笌 EXIF锛涢噸鍚嶆枃浠惰嚜鍔ㄨ拷鍔犲簭鍙凤紝鍗曚釜澶辫触涓嶄細涓柇鏁存壒浠诲姟锛屽苟鏄剧ず杩涘害涓庢垚鍔?澶辫触鏁伴噺銆?- 閫夌墖闆嗗崟寮犵収鐗囨柊澧炪€岀敓鎴愮エ鏍瑰皝闈€嶏細涓€濂楁梾琛岀エ鏍规ā鏉挎寜妯浘/绔栧浘鑷姩鍒囨崲鐓х墖鍖轰笌淇℃伅鍖轰綅缃€?- 绁ㄦ牴灏侀潰浼氫粠鐓х墖鎻愬彇 4鈥? 涓唬琛ㄨ壊锛屾敮鎸佷竴閿崲鑹插苟鑷姩淇濊瘉鏂囧瓧鍙锛涜嚜鍔ㄨ鍙?YEAR銆丏ATE 鍜屽彲鐢?GPS 鍦扮偣锛岃嫳鏂?涓枃鍦扮偣鍙墜鍔ㄤ慨鏀广€?- 绁ㄦ牴灏侀潰鍙繚瀛樹负鐙珛 3:4 楂樻竻鍥剧墖鍒扮郴缁熺浉鍐岋紝涓嶄慨鏀瑰師鐓х墖锛涗繚鐣欑幇鏈夋寮忕鍚嶃€丱TA 閾捐矾涓?Windows self-hosted Runner銆?"
-                     ],
-    "apkSizeBytes":  47717650
+  "schemaVersion": 1,
+  "enabled": true,
+  "published": true,
+  "versionName": "1.0.4.3",
+  "versionCode": 1009,
+  "apkUrl": "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.3/PhotoFlow.apk",
+  "sha256": "664c952882d436aef3a692f3d32d6a34c4d4a34ec2f5ba4b1a68c6f2bc7725a3",
+  "forceUpdate": false,
+  "releaseNotes": [
+    "全局视觉精修：收敛首页、相册、整理、选片的大圆角、厚阴影和卡片套卡片。",
+    "底部 4 个一级导航图标升级为统一的正式线性图标，导航关系保持不变。",
+    "选片集新增批量导出：默认只复制，不移动、不删除原照片，支持一级与二级真实文件夹结构。",
+    "导出使用 Android Storage Access Framework，保留原始图片质量与 EXIF，支持重名自动编号和失败计数。",
+    "选片集单张照片新增票根封面：横竖图自动适配，可从照片提取代表色并编辑中英文地点。",
+    "票根封面可保存为独立高清图片到系统相册，不修改原照片。"
+  ],
+  "apkSizeBytes": 47717650
 }
