@@ -1,14 +1,14 @@
 {
-    "schemaVersion":  1,
-    "enabled":  true,
-    "published":  true,
-    "versionName":  "1.0.4.5.2",
-    "versionCode":  1013,
-    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.5.2/PhotoFlow.apk",
-    "sha256":  "2d006f416ae33712b18dd92d99ac304bdb7fdde3f207423634294be44bcaa88c",
-    "forceUpdate":  false,
-    "releaseNotes":  [
-                         "V1.0.4.5.2 / 1013 瀹屾垚銆岃冻杩广€嶅湴鍥炬渶鍚庝竴杞ǔ瀹氭€т慨澶嶏紝琛ュ厖 guarded map lifecycle锛氫粎鍦?WebView 宸插叿澶囨湁鏁堝昂瀵稿苟瀹屾垚椤甸潰鍔犺浇鍚庢墽琛屽湴鍥鹃€傞厤銆?- 鍦板浘棣栨鍔犺浇鍙婂唴瀹规洿鏂板悗澧炲姞澶氶樁娈?forceFit锛岄檷浣庨〉闈㈠垏鎹€乄ebView 灏哄鍙樺寲瀵艰嚧鍦板浘绌虹櫧鎴栨湭姝ｇ‘瀹氫綅鐨勬鐜囥€?- 瓒宠抗鍦板浘缁х画娌跨敤鐜版湁鐓х墖 GPS 鍦扮偣绱㈠紩銆佽嚜鍖呭惈鍦板浘娓叉煋鍜?OpenStreetMap 搴曞浘鍥為€€锛涘簳鍥惧紓甯告椂浠嶄繚鐣欏湴鐐圭姸鎬侊紝涓嶅啀闈欓粯鏄剧ず鏁村潡绌虹櫧銆?- 鏈浠呭鐞嗚冻杩瑰湴鍥剧敓鍛藉懆鏈熶笌绋冲畾鎬э紝涓嶆敼鍙?applicationId銆佹寮忕鍚嶃€佺幇鏈?OTA 閾捐矾鍙婂叾浠栨垚鐔熶笟鍔″姛鑳姐€?"
-                     ],
-    "apkSizeBytes":  47832342
+  "schemaVersion": 1,
+  "enabled": true,
+  "published": true,
+  "versionName": "1.0.4.5.2",
+  "versionCode": 1013,
+  "apkUrl": "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.5.2/PhotoFlow.apk",
+  "sha256": "2d006f416ae33712b18dd92d99ac304bdb7fdde3f207423634294be44bcaa88c",
+  "forceUpdate": false,
+  "releaseNotes": [
+    "V1.0.4.5.2 / 1013 完成足迹地图最后一轮稳定性修复：完善 guarded map lifecycle，仅在 WebView 具备有效尺寸并完成页面加载后执行地图适配；地图首次加载及内容更新后增加多阶段 forceFit，降低页面切换或 WebView 尺寸变化导致地图空白、定位异常的概率；底图异常时仍保留地点状态，不再静默显示整块空白。本次不改变 applicationId、正式签名、现有 OTA 链路及其他成熟业务功能。"
+  ],
+  "apkSizeBytes": 47832342
 }
