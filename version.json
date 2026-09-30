@@ -1,21 +1,18 @@
 {
-  "schemaVersion": 1,
-  "enabled": true,
-  "published": true,
-  "versionName": "1.0.4.5",
-  "versionCode": 1011,
-  "apkUrl": "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.5/PhotoFlow.apk",
-  "sha256": "60f9346dfc9639e8b1bb30fddde245cab9b04faa572edbd8acea0fc085768c22",
-  "forceUpdate": false,
-  "releaseNotes": [
-    "进入全局 UI 精修：一级页统一保留顶部安全空间，整理 / 选片去除左上角主副标题，首页仅保留轻量品牌标题与设置入口。",
-    "相册页继续保留「全部照片」Hero，但 Hero 图片恢复为干净照片展示；「全部照片 / 张数 / 容量」移到图片下方，并收轻跳转箭头与信息层级。",
-    "全局照片、相册封面、卡片与按钮圆角整体收敛，减少大弧度模板感，统一更克制的照片型视觉语言。",
-    "二级页面导航和返回按钮进一步轻量化，减少大白圆按钮、强阴影和过大的返回符号。",
-    "待删除复核减少重复的红色状态和大号操作按钮，降低底部危险操作的视觉压迫，继续保留 Android 系统二次确认。",
-    "重复照片、照片信息等页面进一步降低大卡片、大圆角和等权按钮感，让真实照片成为主要视觉内容。",
-    "足迹首页和完整足迹页重构为地图主视觉方向，继续复用现有照片 GPS 地点索引。",
-    "保持相册地点去重、相册折叠、视频缩略图与视频预览黑屏修复、选片集、SAF 批量导出等成熟业务逻辑不变。"
-  ],
-  "apkSizeBytes": 47815954
+    "schemaVersion":  1,
+    "enabled":  true,
+    "published":  true,
+    "versionName":  "1.0.4.5.1",
+    "versionCode":  1012,
+    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.5.1/PhotoFlow.apk",
+    "sha256":  "6148624f20d0f9111eb719e0b29742a57d2a7d1bdd71401e73d5630cdbf3c626",
+    "forceUpdate":  false,
+    "releaseNotes":  [
+                         "V1.0.4.5.1 / 1012 修复「足迹」地图在部分网络环境下整块空白的问题：移除对外部 Leaflet CDN 的依赖，改为应用内自包含地图渲染逻辑。",
+                         "足迹地图继续读取现有照片 GPS 地点索引；即使地图底图服务暂时不可用，也会保留地点标记与明确状态提示，不再只显示空白区域。",
+                         "地图底图增加备用 OpenStreetMap 图源回退，完整足迹页保留拖动与缩放能力。",
+                         "修复 OTA 更新介绍中文乱码：当前 1.0.4.5 服务端说明已恢复正常中文，本次发布继续按 UTF-8 输出。",
+                         "保持 applicationId、正式签名、OTA 链路及现有照片整理、选片、视频预览等成熟业务逻辑不变。"
+                     ],
+    "apkSizeBytes":  47815958
 }
