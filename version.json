@@ -1,14 +1,19 @@
 {
-  "schemaVersion": 1,
-  "enabled": true,
-  "published": true,
-  "versionName": "1.0.4.5.2",
-  "versionCode": 1013,
-  "apkUrl": "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.5.2/PhotoFlow.apk",
-  "sha256": "2d006f416ae33712b18dd92d99ac304bdb7fdde3f207423634294be44bcaa88c",
-  "forceUpdate": false,
-  "releaseNotes": [
-    "V1.0.4.5.2 / 1013 完成足迹地图最后一轮稳定性修复：完善 guarded map lifecycle，仅在 WebView 具备有效尺寸并完成页面加载后执行地图适配；地图首次加载及内容更新后增加多阶段 forceFit，降低页面切换或 WebView 尺寸变化导致地图空白、定位异常的概率；底图异常时仍保留地点状态，不再静默显示整块空白。本次不改变 applicationId、正式签名、现有 OTA 链路及其他成熟业务功能。"
-  ],
-  "apkSizeBytes": 47832342
+    "schemaVersion":  1,
+    "enabled":  true,
+    "published":  true,
+    "versionName":  "1.0.4.6",
+    "versionCode":  1014,
+    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.6/PhotoFlow.apk",
+    "sha256":  "954289560da3ccee241e3babc6bdb7e5e9bfc4fb20660de7034fd97e5086685c",
+    "forceUpdate":  false,
+    "releaseNotes":  [
+                         "V1.0.4.6 / 1014 重构「足迹」：移除不稳定的地图展示，改为复用现有地点索引，直接浏览去过的城市与对应照片。",
+                         "「制作票根」迁入选片页作为大入口；横版票根放大，竖版改为大照片 + 下方信息区，并将编辑字段统一为「主标题 / 副标题」。",
+                         "快捷选片改为用户自定义最多 3 个，不再默认取最早创建的选片集；整理照片时新增「＋ 新建」快捷入口。",
+                         "整理过程中将照片加入任意选片集后会自动标记为「已保留」；从选片集移出不会自动取消保留状态。",
+                         "「我的选片集」改为更紧凑的双列照片网格，提升选片集较多时的浏览效率。",
+                         "保持现有 applicationId、正式签名、照片引用逻辑和 OTA 升级链路不变。"
+                     ],
+    "apkSizeBytes":  47815954
 }
