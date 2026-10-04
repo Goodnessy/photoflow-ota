@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "published": false,
+  "versionName": "1.0.4.13",
+  "versionCode": 1021,
+  "apkUrl": "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.13/PhotoFlow.apk",
+  "sha256": "c6bdf151dd5265612cf6ab5d1b03c8deaafb8255118f881aed6412a051ea9e82",
+  "forceUpdate": false,
+  "releaseNotes": ["PhotoFlow Beta 通道初始化"],
+  "apkSizeBytes": 48094486
+}
