@@ -2,15 +2,13 @@
     "schemaVersion":  1,
     "enabled":  true,
     "published":  true,
-    "versionName":  "1.0.4.14",
-    "versionCode":  1022,
-    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.14/PhotoFlow.apk",
-    "sha256":  "ba0143487b53b653fa321d2cf01d9c3066f9c78249d07ff447f51bebfd8a4565",
+    "versionName":  "1.0.4.15",
+    "versionCode":  1023,
+    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.15/PhotoFlow.apk",
+    "sha256":  "bafbba455e534f89b7c6a7f6826faf11db4fc1e94e878de1e6f1a70c9141639c",
     "forceUpdate":  false,
     "releaseNotes":  [
-                         "V1.0.4.14 / 1022 新增正式更新通道与 Beta 测试通道；设置中的“检查更新”默认突出正式版本，Beta 入口保持低调。",
-                         "应用启动时仍只自动检查正式通道，不会自动收到 Beta 测试版本。",
-                         "Beta 使用独立 OTA 清单，后续测试版可单独发布，不影响正式通道与现有正式用户。"
+                         "V1.0.4.15 / 1023 设置页新增“联系开发者”，可查看二维码海报并复制开发者微信 Goody_a。"
                      ],
-    "apkSizeBytes":  48110866
+    "apkSizeBytes":  48142655
 }
