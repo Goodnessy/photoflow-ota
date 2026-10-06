@@ -2,13 +2,15 @@
     "schemaVersion":  1,
     "enabled":  true,
     "published":  true,
-    "versionName":  "1.0.4.15",
-    "versionCode":  1023,
-    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.15/PhotoFlow.apk",
-    "sha256":  "bafbba455e534f89b7c6a7f6826faf11db4fc1e94e878de1e6f1a70c9141639c",
+    "versionName":  "1.0.4.16",
+    "versionCode":  1024,
+    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.16/PhotoFlow.apk",
+    "sha256":  "362c6780851854b6775c653c6f7416461324155be986a43de3dcd20bee06bce4",
     "forceUpdate":  false,
     "releaseNotes":  [
-                         "V1.0.4.15 / 1023 设置页新增“联系开发者”，可查看二维码海报并复制开发者微信 Goody_a。"
+                         "视频整理支持加入选片集，照片和视频可以一起完成主题选片。",
+                         "新增整理完成反馈，删除成功后可查看本次清理数量和释放空间。",
+                         "修复了一些已知问题，优化使用体验。"
                      ],
-    "apkSizeBytes":  48142655
+    "apkSizeBytes":  48250420
 }
