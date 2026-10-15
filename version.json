@@ -2,13 +2,17 @@
     "schemaVersion":  1,
     "enabled":  true,
     "published":  true,
-    "versionName":  "1.0.4.18",
-    "versionCode":  1026,
-    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v1.0.4.18/PhotoFlow.apk",
-    "sha256":  "b95846bc5db0993a86be2bbf779637220471eca7b9b216afd26c806aacaa8cec",
+    "versionName":  "2.0",
+    "versionCode":  2000,
+    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v2.0/PhotoFlow.apk",
+    "sha256":  "dec7209c4441ba8c7e1402181cbe676575abf01f4caa9f6c30ebcb4fca650a19",
     "forceUpdate":  false,
     "releaseNotes":  [
-                         "更新方式调整：优先通过 Gitee 检查并下载，GitHub 自动备用。"
+                         "iPhotos 全新视觉：桌面名称继续使用「相册轻理」，启用定稿图标，统一启动页与品牌显示。",
+                         "优化相册体验：时间轴、时光机、文件夹和视频库，以及封面手动取景、瀑布流与毛玻璃操作控件。",
+                         "优化相似及重复照片识别：未变化照片继续复用特征缓存，照片集合不变时直接复用上次分组结果。",
+                         "修正 Android 系统开屏 Logo 的异常放大问题。",
+                         "OTA 更新优先使用 Gitee，无法连接时自动回退至 GitHub；下载后校验安装包完整性。"
                      ],
-    "apkSizeBytes":  48250424
+    "apkSizeBytes":  48704276
 }
