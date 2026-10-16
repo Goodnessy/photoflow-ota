@@ -2,18 +2,15 @@
     "schemaVersion":  1,
     "enabled":  true,
     "published":  true,
-    "versionName":  "2.0.1",
-    "versionCode":  2001,
-    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v2.0.1/PhotoFlow.apk",
-    "sha256":  "539d1effe93f8e12dbf617a9058861f37b95495557419eff4986f005967a47b8",
+    "versionName":  "2.0.2",
+    "versionCode":  2002,
+    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v2.0.2/PhotoFlow.apk",
+    "sha256":  "c526cf8a12e27eb25f0ef7642bdd5434669116ec09724c1ce510f28b6071c731",
     "forceUpdate":  false,
     "releaseNotes":  [
-                         "整理页右侧快捷选片升级为贴边标签：间距更紧凑、减少照片遮挡，选中状态使用清晰的品牌蓝强调色。",
-                         "独立提供选片管理、系统分享和票根制作入口，保留原有照片滑动整理操作。",
-                         "选片导出支持复制或移动；按一级、二级目录移动时，每张照片只存放一份，避免精选重复归档。",
-                         "年度相册自定义封面改为独立保存图片，减少原照片移动、重新扫描对封面的影响。",
-                         "优化选片集界面和导出弹窗，精简冗长提示文案。",
-                         "修复清理完成页空间大小的 MB/GB 单位可能显示不全的问题。"
+                         "统一快捷选片管理弹窗视觉：两张功能卡片等宽、等高、淡蓝色背景，修正大面积留白及蓝色误认选中的问题。",
+                         "调整常用选片集排序界面：移除突兀的绿色，改用品牌蓝序号、淡蓝色已选中卡片和蓝色可用排序箭头。",
+                         "保留 V2.0.1 已验收的快捷选片贴边标签、分享、票根、照片移动与复制，以及年度封面独立保存功能。"
                      ],
     "apkSizeBytes":  48769820
 }
