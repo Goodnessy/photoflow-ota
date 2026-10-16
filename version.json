@@ -2,17 +2,18 @@
     "schemaVersion":  1,
     "enabled":  true,
     "published":  true,
-    "versionName":  "2.0",
-    "versionCode":  2000,
-    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v2.0/PhotoFlow.apk",
-    "sha256":  "dec7209c4441ba8c7e1402181cbe676575abf01f4caa9f6c30ebcb4fca650a19",
+    "versionName":  "2.0.1",
+    "versionCode":  2001,
+    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v2.0.1/PhotoFlow.apk",
+    "sha256":  "539d1effe93f8e12dbf617a9058861f37b95495557419eff4986f005967a47b8",
     "forceUpdate":  false,
     "releaseNotes":  [
-                         "iPhotos 全新视觉：桌面名称继续使用「相册轻理」，启用定稿图标，统一启动页与品牌显示。",
-                         "优化相册体验：时间轴、时光机、文件夹和视频库，以及封面手动取景、瀑布流与毛玻璃操作控件。",
-                         "优化相似及重复照片识别：未变化照片继续复用特征缓存，照片集合不变时直接复用上次分组结果。",
-                         "修正 Android 系统开屏 Logo 的异常放大问题。",
-                         "OTA 更新优先使用 Gitee，无法连接时自动回退至 GitHub；下载后校验安装包完整性。"
+                         "整理页右侧快捷选片升级为贴边标签：间距更紧凑、减少照片遮挡，选中状态使用清晰的品牌蓝强调色。",
+                         "独立提供选片管理、系统分享和票根制作入口，保留原有照片滑动整理操作。",
+                         "选片导出支持复制或移动；按一级、二级目录移动时，每张照片只存放一份，避免精选重复归档。",
+                         "年度相册自定义封面改为独立保存图片，减少原照片移动、重新扫描对封面的影响。",
+                         "优化选片集界面和导出弹窗，精简冗长提示文案。",
+                         "修复清理完成页空间大小的 MB/GB 单位可能显示不全的问题。"
                      ],
-    "apkSizeBytes":  48704276
+    "apkSizeBytes":  48769820
 }
