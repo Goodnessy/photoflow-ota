@@ -2,15 +2,15 @@
     "schemaVersion":  1,
     "enabled":  true,
     "published":  true,
-    "versionName":  "2.0.2",
-    "versionCode":  2002,
-    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v2.0.2/PhotoFlow.apk",
-    "sha256":  "c526cf8a12e27eb25f0ef7642bdd5434669116ec09724c1ce510f28b6071c731",
+    "versionName":  "2.0.3",
+    "versionCode":  2003,
+    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v2.0.3/PhotoFlow.apk",
+    "sha256":  "412823fac46a4b6821bfeb870e6bc5990fede8060024a44a251a0bda50dee0c2",
     "forceUpdate":  false,
     "releaseNotes":  [
-                         "统一快捷选片管理弹窗视觉：两张功能卡片等宽、等高、淡蓝色背景，修正大面积留白及蓝色误认选中的问题。",
-                         "调整常用选片集排序界面：移除突兀的绿色，改用品牌蓝序号、淡蓝色已选中卡片和蓝色可用排序箭头。",
-                         "保留 V2.0.1 已验收的快捷选片贴边标签、分享、票根、照片移动与复制，以及年度封面独立保存功能。"
+                         "修复选片集管理缺少重命名的问题：点击「管理」显示「重命名」「删除」两个文字选项。",
+                         "一级选片集和二级精选均支持修改名称，保存后选片集标题与快捷标签同步更新。",
+                         "重命名仅修改名称，原有选片集 ID、照片成员、二级关联及快捷选片设置全部保留；删除仍需二次确认，不会删除手机原照片。"
                      ],
-    "apkSizeBytes":  48769820
+    "apkSizeBytes":  48786204
 }
