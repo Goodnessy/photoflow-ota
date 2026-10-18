@@ -14,5 +14,6 @@
                          "实况照片播放控制移至照片左上角，采用点阵播放图标 + LIVE，播放时切换暂停图标；右侧选片工具保持不变。",
                          "改进 OPPO 等实况照片识别，验证内嵌视频轨道，减少普通照片误标为 LIVE。"
                      ],
-    "apkSizeBytes":  48933130
+    "apkSizeBytes":  48933130,
+    "backupApkUrl":  "https://gitee.com/well2022/photoflow-ota/releases/download/v2.1.0/PhotoFlow.apk"
 }
