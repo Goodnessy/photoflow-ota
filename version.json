@@ -2,18 +2,17 @@
     "schemaVersion":  1,
     "enabled":  true,
     "published":  true,
-    "versionName":  "2.1.0",
-    "versionCode":  2100,
-    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v2.1.0/PhotoFlow.apk",
-    "sha256":  "b80451b58f4ba92a16fdf58f275b7674867bb11e641c78cf66f8dee46bfd2ab8",
+    "versionName":  "2.2.0",
+    "versionCode":  2200,
+    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v2.2.0/PhotoFlow.apk",
+    "sha256":  "2d7186e01840c710fdcdf47719b167c1c3485d9afbe0df8d7a7e34abce89db1b",
     "forceUpdate":  false,
     "releaseNotes":  [
-                         "新增「时空隧道」：首页独立高清入口，随机遇见照片，可选择随机整理或从该照片按时间顺序整理。",
-                         "随机回忆卡片采用通栏照片、拍摄日期与已有位置信息展示。",
-                         "文件夹同时显示照片、实况照片及视频，并接入现有整理操作。",
-                         "实况照片播放控制移至照片左上角，采用点阵播放图标 + LIVE，播放时切换暂停图标；右侧选片工具保持不变。",
-                         "改进 OPPO 等实况照片识别，验证内嵌视频轨道，减少普通照片误标为 LIVE。"
+                         "选片时右侧快捷标签支持 2–6 个自定义数量，可更换常用选片集并调整顺序；旧版默认 3 个标签。",
+                         "选片页的快捷标签同步显示，标签配置可保存，保留已有选片集及选片记录。",
+                         "文件夹列表新增按占用空间从大到小、从小到大排序，并展示文件夹的照片与视频总容量。",
+                         "文件夹内照片与视频新增按文件大小升序、降序排序，保留最新和最旧优先。",
+                         "文件夹列表和内部影像的排序偏好分别保存；复用本机媒体索引，不额外扫描照片。"
                      ],
-    "apkSizeBytes":  48933130,
-    "backupApkUrl":  "https://gitee.com/well2022/photoflow-ota/releases/download/v2.1.0/PhotoFlow.apk"
+    "apkSizeBytes":  48965894
 }
