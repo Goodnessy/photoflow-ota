@@ -14,5 +14,6 @@
                          "文件夹内照片与视频新增按文件大小升序、降序排序，保留最新和最旧优先。",
                          "文件夹列表和内部影像的排序偏好分别保存；复用本机媒体索引，不额外扫描照片。"
                      ],
-    "apkSizeBytes":  48965894
+    "apkSizeBytes":  48965894,
+    "backupApkUrl":  "https://gitee.com/well2022/photoflow-ota/releases/download/v2.2.0/PhotoFlow.apk"
 }
