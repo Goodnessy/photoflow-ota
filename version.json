@@ -2,18 +2,17 @@
     "schemaVersion":  1,
     "enabled":  true,
     "published":  true,
-    "versionName":  "2.2.0",
-    "versionCode":  2200,
-    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v2.2.0/PhotoFlow.apk",
-    "sha256":  "2d7186e01840c710fdcdf47719b167c1c3485d9afbe0df8d7a7e34abce89db1b",
+    "versionName":  "2.3.0",
+    "versionCode":  2300,
+    "apkUrl":  "https://github.com/Goodnessy/photoflow-ota/releases/download/v2.3.0/PhotoFlow.apk",
+    "sha256":  "dd6dd72b7b3d633fbfa7a3258059f6037fc23a9bbdcae1b3c863226ffe3b022f",
     "forceUpdate":  false,
     "releaseNotes":  [
-                         "选片时右侧快捷标签支持 2–6 个自定义数量，可更换常用选片集并调整顺序；旧版默认 3 个标签。",
-                         "选片页的快捷标签同步显示，标签配置可保存，保留已有选片集及选片记录。",
-                         "文件夹列表新增按占用空间从大到小、从小到大排序，并展示文件夹的照片与视频总容量。",
-                         "文件夹内照片与视频新增按文件大小升序、降序排序，保留最新和最旧优先。",
-                         "文件夹列表和内部影像的排序偏好分别保存；复用本机媒体索引，不额外扫描照片。"
+                         "选片集照片不再常驻删除叉号，常规浏览仅打开大图预览，减少滑动及点击误移出。",
+                         "复用选片集原有“管理”入口，新增“管理照片”：支持勾选多张照片并批量移出，操作前需二次确认。",
+                         "移出选片集只解除关联，不删除手机原照片；一级选片集同步更新关联的二级精选。",
+                         "选片集详情页增加“画册 / 时间轴”切换；时间轴按原始照片拍摄年月自动分组。",
+                         "时间轴提供月份快捷跳转；保留原画册排版、继续选片、二次筛选、导出等原有功能。"
                      ],
-    "apkSizeBytes":  48965894,
-    "backupApkUrl":  "https://gitee.com/well2022/photoflow-ota/releases/download/v2.2.0/PhotoFlow.apk"
+    "apkSizeBytes":  48998666
 }
