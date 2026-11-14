@@ -14,5 +14,6 @@
                          "选片集详情页增加“画册 / 时间轴”切换；时间轴按原始照片拍摄年月自动分组。",
                          "时间轴提供月份快捷跳转；保留原画册排版、继续选片、二次筛选、导出等原有功能。"
                      ],
-    "apkSizeBytes":  48998666
+    "apkSizeBytes":  48998666,
+    "backupApkUrl":  "https://gitee.com/well2022/photoflow-ota/releases/download/v2.3.0/PhotoFlow.apk"
 }
